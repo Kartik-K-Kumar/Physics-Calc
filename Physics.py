@@ -18,7 +18,7 @@ if FindOut==1:
 elif FindOut==2:
     Angle = float(input("Whats the angle to the horizontal? "))
     Initial = float(input("Whats the initial velocity? "))
-    formula = (2 * Initial * math.sin(Angle)) / GRAVITY
+    formula = (2 * Initial * math.sin(2 * Angle)) / GRAVITY
     print("the time taken for the object from start to the end of its journey for it travelling is: " + str(formula))
 else:
     print("Invalid")
