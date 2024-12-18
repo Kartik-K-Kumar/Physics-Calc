@@ -1,5 +1,5 @@
 import math
-FindOut = int(input("press 1 for the Viscosity formula, press 2 for the time to be found in mechanics"))
+FindOut = int(input("press 1 for the Viscosity formula, press 2 for the range and time to be found in mechanics, press 3 for stress to be found."))
 GRAVITY = 9.81
 pi = math.pi
 
@@ -20,7 +20,14 @@ elif FindOut==2:
     radAngle = math.radians(Angle)
     
     Initial = float(input("Whats the initial velocity? "))
-    formula = (2 * Initial * math.sin(radAngle)) / GRAVITY
-    print("the time taken for the object from start to the end of its journey for it travelling is: " + str(formula))
+    Time = (2 * Initial * math.sin(radAngle)) / GRAVITY
+    Range = ((Initial**2) * math.sin(2*RadAngle)) / GRAVITY
+    print(f"The time for the object is: {Time}. The range is: {Range}.")
+
+elif FindOut==3:
+    Force = float(input("Whats the Force in Newtons? "))
+    CSArea = float(input("Whats the Cross Sectional area of the object? "))
+    Stress = Force/CSArea
+    print(f"The Stress is {Stress}pa.")
 else:
     print("Invalid")
