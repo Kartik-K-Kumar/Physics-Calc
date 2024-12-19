@@ -1,5 +1,6 @@
 import math
-FindOut = int(input("press 1 for the Viscosity formula, press 2 for the range and time to be found in mechanics, press 3 for stress to be found."))
+FindOut = int(input("press 1 for the Viscosity formula, press 2 for the range and time to be found in mechanics, press 3 for stress to be found-
+, press 4 for finding out the cross sectional area of a sphere."))
 GRAVITY = 9.81
 pi = math.pi
 
@@ -29,5 +30,10 @@ elif FindOut==3:
     CSArea = float(input("Whats the Cross Sectional area of the object? "))
     Stress = Force/CSArea
     print(f"The Stress is {Stress}pa.")
+elif FindOut==4:
+    SphereRadius = float(input("whats the radius of the sphere? "))
+    ConverToRadians = math.radians(SphereRadians)
+    Cs = 4/3 * math.pi * ConvertToRadians**2
+    print(f"the cross secstional area of a sphere with the radius {SphereRadius} is {Cs}")
 else:
     print("Invalid")
