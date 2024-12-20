@@ -4,7 +4,7 @@ FindOut = int(input("press 1 for the Viscosity formula, press 2 for the range an
 GRAVITY = 9.81
 pi = math.pi
 
-if FindOut==1:
+if FindOut == 1:
     Mass = float(input("Whats the mass of the steel ball? "))
     Radius = float(input("Whats the Radius of the steel ball? "))
     Density = 1260
@@ -16,7 +16,7 @@ if FindOut==1:
     Denominator = 6*pi*Radius*Velocity
     Visc = (Weight - SphereVolume * GRAVITY * Density) / Denominator
     print(Visc)
-elif FindOut==2:
+elif FindOut == 2:
     Angle = float(input("Whats the angle to the horizontal? "))
     radAngle = math.radians(Angle)
     
@@ -25,15 +25,15 @@ elif FindOut==2:
     Range = ((Initial**2) * math.sin(2*RadAngle)) / GRAVITY
     print(f"The time for the object is: {Time}. The range is: {Range}.")
 
-elif FindOut==3:
+elif FindOut == 3:
     Force = float(input("Whats the Force in Newtons? "))
     CSArea = float(input("Whats the Cross Sectional area of the object? "))
     Stress = Force/CSArea
     print(f"The Stress is {Stress}pa.")
-elif FindOut==4:
+elif FindOut == 4:
     SphereRadius = float(input("whats the radius of the sphere? "))
     ConverToRadians = math.radians(SphereRadians)
     Cs = 4/3 * math.pi * ConvertToRadians**2
     print(f"the cross secstional area of a sphere with the radius {SphereRadius} is {Cs}")
 else:
-    print("Invalid")
+    print("Invalid input please try again")
