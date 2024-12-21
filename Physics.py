@@ -35,5 +35,10 @@ elif FindOut == 4:
     ConverToRadians = math.radians(SphereRadians)
     Cs = 4/3 * math.pi * ConvertToRadians**2
     print(f"the cross secstional area of a sphere with the radius {SphereRadius} is {Cs}")
+elif FindOut == 5:
+    base = float(input("whats the base: "))
+    height = float(input("whats the height: "))
+    SQarea = base * height 
+    print(f"the area of the square is {SQarea}.")
 else:
     print("Invalid input please try again")
