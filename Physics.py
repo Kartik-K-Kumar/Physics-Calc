@@ -1,6 +1,6 @@
 import math
 FindOut = int(input("press 1 for the Viscosity formula, press 2 for the range and time to be found in mechanics, press 3 for stress to be found-
-, press 4 for finding out the cross sectional area of a sphere."))
+, press 4 for finding out the cross sectional area of a sphere, press 5 for the area of a square."))
 GRAVITY = 9.81
 pi = math.pi
 
