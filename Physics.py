@@ -41,4 +41,4 @@ elif FindOut == 5:
     SQarea = base * height 
     print(f"the area of the square is {SQarea}.")
 else:
-    print("Invalid input please try again")
+    print("Invalid input pleasr follow the instructions listed above.")
