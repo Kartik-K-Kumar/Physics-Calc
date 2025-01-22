@@ -11,9 +11,9 @@ if FindOut == 1:
     Velocity = float(input("Whats the terminal velocity? "))
     
 
-    Weight = Mass*GRAVITY
-    SphereVolume = (4/3) * Radius**3
-    Denominator = 6*pi*Radius*Velocity
+    Weight = Mass * GRAVITY
+    SphereVolume = (4/3) * Radius ** 3
+    Denominator = 6 * pi * Radius * Velocity
     Visc = (Weight - SphereVolume * GRAVITY * Density) / Denominator
     print(Visc)
 elif FindOut == 2:
