@@ -1,6 +1,6 @@
 import math
 FindOut = int(input("press 1 for the Viscosity formula, press 2 for the range and time to be found in mechanics, press 3 for stress to be found-
-, press 4 for finding out the cross sectional area of a sphere, press 5 for the area of a square."))
+, press 4 for finding out the cross sectional area of a sphere, press 5 for the area of a square, 6 for momentum."))
 GRAVITY = 9.81
 pi = math.pi
 
@@ -40,5 +40,10 @@ elif FindOut == 5:
     height = float(input("whats the height: "))
     SQarea = base * height 
     print(f"the area of the square is {SQarea}.")
+elif FindOut== 6:
+    mass = float(input("whats the mass of the object in the collision: "))
+    velocity = float(input("whats the celocity of the object in collision: "))
+    momentum = mass * velocity
+    print(f"the momentum is {momentum}.")
 else:
     print("Invalid input pleasr follow the instructions listed above.")
